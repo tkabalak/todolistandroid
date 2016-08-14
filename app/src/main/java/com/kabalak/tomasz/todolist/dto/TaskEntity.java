@@ -6,6 +6,20 @@ import java.util.Date;
  * Created by Wiesiek on 2016-08-11.
  */
 public class TaskEntity {
+    //column names
+    public static final String ID = "id";
+    public static final String TASKPARENT = "taskParent";
+
+    public static final String TITLE = "title";
+    public static final String DESCRIPTION = "description";
+
+    public static final String ADDDATE = "addDate";
+    public static final String LASTEDITEDDATE = "lastEditedDate";
+    public static final String EXPIREDDATE = "expiredDate";
+
+    public static final String PERFORMED = "performed";
+
+
     private int id;
 
     private int parentId;
@@ -104,7 +118,7 @@ public class TaskEntity {
 
 
 
-    public boolean isPerformed() {
+    public boolean isPerformedBool() {
         return isPerformed;
     }
 
@@ -112,5 +126,12 @@ public class TaskEntity {
         isPerformed = performed;
     }
 
+    public void setPerformed(int performed) {
+        isPerformed = performed > 0;
+    }
+
+    public int isPerformedInt() {
+        return isPerformed ? 1 : 0;
+    }
 
 }
