@@ -13,69 +13,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dodaj zadanie"
-        android:id="@+id/add_task_title" />
+        android:id="@+id/add_task_title1" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/add_task_title"
+        android:layout_below="@+id/add_task_title1"
         android:layout_centerHorizontal="true"
         android:weightSum="1">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Tytuł zadania"
-            android:id="@+id/textTaskName"
-            android:layout_gravity="center_horizontal" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTaskName"
-            android:layout_gravity="center_horizontal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Opis zadania"
-            android:id="@+id/textTaskDescription"
-            android:layout_gravity="center_horizontal" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.30" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Data końca"
-            android:id="@+id/textExpireTime"
-            android:layout_gravity="center_horizontal" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/editExpireDate"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dodaj"
-            android:id="@+id/buttonAddTask"
-            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
 </RelativeLayout>

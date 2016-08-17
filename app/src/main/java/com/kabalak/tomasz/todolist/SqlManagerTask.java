@@ -8,8 +8,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.kabalak.tomasz.todolist.dto.TaskEntity;
 
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * Created by tkabalak on 2016-08-11.
